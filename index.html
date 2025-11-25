@@ -9,24 +9,114 @@ Select TWO Additional Features to Add
 [ no ] Feature 2 - Flip Card
 [ no ] Feature 3 - Animation
 [ no ] Feature 4 - Linear Gradient
-[ no ] Feature 5 - Use a .Gif
+[ yes ] Feature 5 - Use a .Gif
 [ no ] Feature 6 - Unique Border Styles
 -->
 
 
 <!DOCTYPE html>
 <html>
+<link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" 
+rel="stylesheet" 
+type="text/css"/>
 
 <head>
   <title>Unit 5 Project</title>
   <meta charset="utf-8">
   <style>
+body {
+  font-family: 'Waiting for the Sunrise', cursive; 
+  font-size:30px; 
+  margin: 10px 50px; 
+  letter-spacing: 6px; 
+  font-weight: bold;
+}
+h3{
+  color:brown
+}
+h3 {
+  border: 3px solid;
+  margin: auto;
+  width:fit-content
+}
+h3:hover {
+  color:blanchedalmond
+}
 
+
+
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      50% { transform: translateX(5px); }
+      75% { transform: translateX(-5px); }
+      100% { transform: translateX(0); }
+    }
+
+        .shake-text {
+      animation: shake 0.5s infinite; /* Adjust duration and iteration as needed */
+    }
+
+    .glowing-text span {
+  font-size: 50px; /* Adjust as needed */
+  color: #fff; /* Base color of the letters */
+  text-shadow: 0 0 5px #0ff, /* Inner glow */
+               0 0 10px #0ff, /* Medium glow */
+               0 0 20px #0ff; /* Outer glow */
+  animation: glow 1.5s ease-in-out infinite alternate; /* Apply animation */
+}
+
+/* Define the glow animation */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px rgb(243, 52, 52), 0 0 10px rgb(255, 166, 0), 0 0 20px rgb(38, 248, 49);
+  }
+  to {
+    text-shadow: 0 0 10px rgb(74, 155, 248), 0 0 20px rgb(225, 0, 255), 0 0 40px rgb(255, 0, 170); /* Stronger glow */
+  }
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   </style>
 </head>
-<body>
+<body style="background-image:url(https://i.redd.it/zp69f0bdm13e1.jpeg)">
+<p align="center">
+  <img width="800"src="https://i.pinimg.com/originals/bb/74/04/bb74046420c4c992b8cabc6e667abe40.gif">
+ </p>
 
- 
+<h3 class="shake-text" align="center">ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ <div id="typedtext"></div>
+</h3>
+
+
+  <div class="glowing-text"  align="center">
+  <span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span><span>I</span><span>J</span><span>K</span><span>L</span><span>M</span><span>N</span><span>O</span>
+</div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
